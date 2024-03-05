@@ -1,0 +1,38 @@
+<!Doctype html>
+<html lang = "en">
+    <head>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>To-Do List</title>
+        <link rel="stylesheet" href="todo_styles.css">
+   
+    </head>
+    <body>
+        <div class="top-center">
+            <img src="images/Qualiday.png" alt="Qualiday Image" class="app-image" style="width: 400px; margin:auto; display:block;">
+        </div>
+        <h2><a href = "login.php" class="log-out">Log out</a></h2> 
+        <div class = "weather-widget">
+            <img src="images/cloud.svg" class="icon">
+            <div id = "description"></div>
+            <h2 id = "temp"></h2>
+            <div id = "location"></div>
+        </div>
+        <script src="weather.js"></script>
+        <div class="container"> 
+            <div class="todo-app">
+                <img src="images/cat2.png" class="top-app">
+                <h2>To-do List <img src="images/checked.png"></h2>
+                <div class="row">
+                    <input  type="text" id="input-box" placeholder="Add your task">
+                    <button onclick="addTask()">+</button>
+                </div>
+                <ul id="list-container">
+                    <!--li class="checked">Task 1</li>
+                    <li>Task 2</li>
+                    <li>Task 3</li>-->
+                </ul>
+            </div>
+        </div>
+       <script src="todo.js"></script>
+</html>

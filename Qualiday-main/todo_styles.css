@@ -1,0 +1,180 @@
+
+@import url('https://fonts.googleapis.com/css?family=Lalezar');
+@import url('https://fonts.googleapis.com/css?family=Lekton');
+@import url('https://fonts.googleapis.com/css?family=Inter');
+body
+{
+    margin: auto;
+    padding: 0px;
+    border: 0px;
+    background-image: url("images/headerbackground.jpg");
+    background-size: 2100px;
+    background-position: 20% -730px;
+    background-repeat: no-repeat;
+       
+}
+.app-name{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    color: #424543;
+    font-family: 'Lekton';
+    font-size: 100px;
+    font-weight: bold;
+}
+.log-out{
+    position: absolute;
+    margin-right: 100px;
+    line-height: 5px;
+    text-align: right;
+    color: #424543;
+    font-size: 15px;
+    margin-top: -150px;
+    font-family: 'Lalezar';
+    font-size: 20px;
+    margin-left: 10px;
+    padding: 5px;
+}
+.weather-widget
+{
+    margin-right: 100px;
+    line-height: 5px;
+    text-align: right;
+    color: #424543;
+    font-size: 15px;
+    margin-top: -150px;
+    font-family: 'Inter';
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    background-color: #C8DBBD;
+    background-image: radial-gradient(#FFFFFF 3px, transparent 3px);
+    background-size: 50px 50px;
+    margin-top: 70px;
+    display: block;
+    justify-content: center;
+
+}
+.top-app{
+    width: 350px;
+    margin-left: 100px;
+    margin-right: auto;
+
+}
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    background: white;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 12px #4e504f;
+}
+.todo-app h2{
+    display: flex;
+    color: #424543;
+    align-items: center;
+    margin-bottom: 20px;
+    font-family: 'Lekton';
+    margin-left: 200px;
+} 
+
+.todo-app h2 img{
+    width: 30px;
+    margin-left: 10px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #F4F6F5;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-family: 'Lekton';
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #B6D1DE;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    cursor: hand;
+    border-radius: 40px;
+    font-size: 20px;
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    cursor: hand;
+    position: relative;
+    color: #424543;
+    font-family: 'Lekton';
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 10px;
+    left: 8px;
+    font-family: 'Lekton';
+
+}
+ul li.checked{
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(images/checked.png);
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #424543;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background: #F4F6F5;
+}
+
+.top-center {
+    text-align: center;
+    padding-top: 20px; /* Adjust the top padding as needed */
+}
+
+.app-image {
+    width: 100px; /* Adjust the max-width as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
